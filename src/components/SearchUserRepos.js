@@ -19,15 +19,15 @@ function SearchUserRepos() {
           accessor: "html_url"
         },
         {
-          Header: "description",
+          Header: "Description",
           accessor: "description"
         },
         {
-          Header: "default_branch",
+          Header: "Default branch",
           accessor: "default_branch"
         },
         {
-          Header: "language",
+          Header: "Language",
           accessor: "language"
         }
       ]
