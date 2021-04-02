@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-// const gitApiUrl = 'https://api.tvmaze.com/search/shows?q=snow';
 const gitApiUrl = 'https://api.github.com/users';
 
 export const getAllReposByUser = (user) => {

@@ -31,7 +31,6 @@ export default function Table({ columns, data }) {
     usePagination
   );
 
-// console.log('data.length', data.length);
 // state var required to control filtering for useFilters plugin hook
 const [filterInput, setFilterInput] = useState("");
 
@@ -39,7 +38,7 @@ const [filterInput, setFilterInput] = useState("");
 const handleFilterChange = e => {
   const value = e.target.value || undefined;
   if (value?.length >= 3) {
-    setFilter("name", value); // Filter rows by matching name repos
+    setFilter("name", value); // Filter rows by matching the name repos
   } else {
     setFilter("name", undefined); 
   }
@@ -134,7 +133,7 @@ const handleFilterChange = e => {
           </select>
         </div>
       }
-      
+
     </>
   );
 }
