@@ -47,11 +47,13 @@ const handleFilterChange = e => {
 
   return (
     <>
-      <input
-        value={filterInput}
-        onChange={handleFilterChange}
-        placeholder={"Filter by Name"}
-      />
+      {data.length > 0 &&
+        <input
+          value={filterInput}
+          onChange={handleFilterChange}
+          placeholder={"Filter by Name"}
+        />
+      }
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (

@@ -45,38 +45,34 @@ class RegisterUser extends React.Component {
         {
           <ViewUserInfo userInfoArr={readUserCookie()} />
         }
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Nombre:
-            <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
-          </label>
-          <br />
-          <label>
-            Apellido:
-            <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
-          </label>
-          <br />
-          <label>
-            Cedula:
-            <input type="text" name="idNumber" value={this.state.idNumber} onChange={this.handleChange} />
-          </label>
-          <br />
-          <label>
-            Fecha nacimiento:
-            <input type="text" name="birthDate" value={this.state.birthDate} onChange={this.handleChange} />
-          </label>
-          <br />
-          <label>
-            Correo electronico:
-            <input type="text" name="email" value={this.state.email} onChange={this.handleChange} />
-          </label>
-          <br /><label>
-            Github username:
-            <input type="text" name="gitUser" value={this.state.gitUser} onChange={this.handleChange} />
-          </label>
-          <br />
 
-          <input type="submit" value="Submit" />
+        <form onSubmit={this.handleSubmit}>
+          <ul className="form-style-1">
+              <li>
+                <label>Full Name <span className="required">*</span></label>
+                <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} className="field-divided" placeholder="First" />
+                <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} className="field-divided" placeholder="Last" />
+              </li>
+              <li>
+                  <label>Cedula <span className="required">*</span></label>
+                  <input type="text" name="idNumber" value={this.state.idNumber} onChange={this.handleChange} className="field-long" />
+              </li>
+              <li>
+                  <label>Fecha nacimiento <span className="required">*</span></label>
+                  <input type="text" name="birthDate" value={this.state.birthDate} onChange={this.handleChange} className="field-long" />
+              </li>
+              <li>
+                  <label>Email <span className="required">*</span></label>
+                  <input type="email" name="email" value={this.state.email} onChange={this.handleChange} className="field-long" />
+              </li>
+              <li>
+                  <label>Github username <span className="required">*</span></label>
+                  <input type="text" name="gitUser" value={this.state.gitUser} onChange={this.handleChange} className="field-long" />
+              </li>
+              <li>
+                  <input type="submit" value="Submit" />
+              </li>
+          </ul>
         </form>
       </>
     );

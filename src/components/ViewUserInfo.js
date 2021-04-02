@@ -14,10 +14,9 @@ export default function ViewUserInfo({ userInfoArr }) {
                   );
                 })
               }
-              <br /><br /><br />
+              <br />
             </>
           }
-          
     </div>
   );
 }

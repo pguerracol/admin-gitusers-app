@@ -3,6 +3,8 @@ import SearchUserRepos from "./components/SearchUserRepos";
 import RegisterUser from "./components/RegisterUser";
 
 import './App.css';
+import './styles/Form.css';
+import './styles/Table.css';
 
 function App() {
   return (
